@@ -143,8 +143,8 @@ jobs:
               mv target/release/glue5.exe Glue5-windows.exe
               ;;
           macos)
-              mise run macos:package
-              mv target/package/*.dmg Glue5-macos.dmg
+              mise run build
+              mv target/release/glue5 Glue5-macos
               ;;
           android)
               mise run android:build
